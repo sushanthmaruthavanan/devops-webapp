@@ -1,0 +1,14 @@
+name: CI Pipeline
+
+on: push: branches:
+      - main
+
+jobs: build: runs-on: ubuntu-latest
+
+    steps: - name: Checkout Code uses: actions/checkout@v3
+
+      - name: Run Build run: echo "Build Successful" rm 
+.github/workflows/ci.yml
+
+nano .github/workflows/ci.yml
+
